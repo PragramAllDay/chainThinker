@@ -1,0 +1,97 @@
+.bgContainer {
+  /* The image used */
+  /* background-image: url("../../public/assets/personal/bgchainn.svg"); */
+  position: relative;
+  /* Set a specific height */
+  height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* padding-bottom: 30rem; */
+}
+.imgLogo {
+  width: 600px;
+  height: auto;
+  object-fit: contain;
+  z-index: 100;
+}
+
+.MainContainer {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 150px;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
+}
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  text-align: start;
+}
+.containerMini {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-items: center;
+  flex-wrap: nowrap;
+}
+.particles canvas {
+  position: absolute !important;
+}
+.serviceContainer {
+  /* The image used */
+  background-image: url("../../public/assets/personal/bg.JPG");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-device-width: 1208px) {
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .containerMini {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  .serviceContainer {
+    background-attachment: scroll;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  .bgContainer {
+    background-attachment: scroll;
+  }
+}
+
+.title {
+  background: -webkit-linear-gradient(#697ec5, #cf4ea4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.title2 {
+  background: -webkit-linear-gradient(#000000, #000000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
